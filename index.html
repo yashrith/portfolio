@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Yashrith Chittoor Hari Krishna — Data Engineer & AI Developer Portfolio. Specialist in ETL/ELT pipelines, RAG systems, and AI engineering.">
+  <title>Yashrith Chittoor Hari Krishna | Data Engineer & AI Developer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Interactive Canvas Background -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <nav>
+        <a href="#" class="logo"><span>yashrith</span>.sh</a>
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          <span>SYSTEM: ACTIVE</span>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contributions" class="nav-link">Contributions</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#research" class="nav-link">Research</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="burger-btn" id="burger-btn" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="about" class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-tag">root@yashrith:~#</div>
+            <h1>Hi, I'm <span class="gradient-text">Yashrith</span></h1>
+            <h2 id="typed-text"></h2>
+            <p>Data & Analytics professional based in Montreal, QC. Expert in designing production-ready machine learning and data systems — from end-to-end ETL/ELT pipelines to RAG architectures.</p>
+            <div class="hero-ctas">
+              <a href="#projects" class="btn btn-primary">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/></svg>
+                View Projects
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114V5.383zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.731z"/></svg>
+                Contact Me
+              </a>
+            </div>
+          </div>
+          
+          <div class="terminal-container">
+            <div class="terminal-window">
+              <div class="terminal-header">
+                <div class="terminal-dots">
+                  <span class="terminal-dot close"></span>
+                  <span class="terminal-dot minimize"></span>
+                  <span class="terminal-dot maximize"></span>
+                </div>
+                <div class="terminal-title">yashrith@terminal: ~</div>
+                <div style="width: 48px;"></div>
+              </div>
+              <div class="terminal-tabs">
+                <div class="terminal-tab active" data-file="profile.sh">profile.sh</div>
+                <div class="terminal-tab" data-file="skills.yml">skills.yml</div>
+                <div class="terminal-tab" data-file="contact.log">contact.log</div>
+              </div>
+              <div class="terminal-body" id="terminal-body">
+                <!-- Content injected dynamically -->
+              </div>
+              <div class="terminal-quick-btns">
+                <button class="terminal-quick-btn" data-cmd="profile">./profile.sh</button>
+                <button class="terminal-quick-btn" data-cmd="skills">cat skills.yml</button>
+                <button class="terminal-quick-btn" data-cmd="clear">clear</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">Professional History</span>
+          <h2 class="section-title">Experience Timeline</h2>
+          <p class="section-desc">A log of my engineering and systems specialization milestones. Click a node to expand the commit details.</p>
+        </div>
+        
+        <div class="git-tree-timeline" id="experience-timeline">
+          
+          <!-- Node 1: Jaqln.ai -->
+          <div class="timeline-node reveal-on-scroll" data-node="jaqln">
+            <div class="commit-dot"></div>
+            <div class="commit-card">
+              <div class="commit-meta">
+                <span class="commit-date">Feb 2025 – Jul 2025</span>
+              </div>
+              <div class="commit-title">AI Development Intern – Data Pipelines & Ingestion</div>
+              <div class="commit-org">Jaqln.ai, Montreal, QC</div>
+            </div>
+            
+            <div class="git-diff-container" id="diff-jaqln">
+              <div class="git-diff-panel">
+                <div class="git-diff-header">Accomplishments & Impact</div>
+                <div class="git-diff-body">
+                  <div class="diff-line addition">• Re-engineered data retrieval pipelines by migrating from basic string-matching to high-dimensional semantic search indexing on GCP Vertex AI, cutting average query latency from ~850ms to 230ms.</div>
+                  <div class="diff-line addition">• Deployed Vertex AI embed structures, metadata enrichment, and vector search strategies.</div>
+                  <div class="diff-line addition">• Designed automated data profiling and validation processes that proactively detected schema inconsistencies.</div>
+                  <div class="diff-line addition">• Engineered automated document extraction engine parsing unstructured texts into standardized, metadata-tagged JSON schemas, reducing manual entry cycles by 33%.</div>
+                  <div class="diff-line addition">• Mapped and documented end-to-end ETL workflows, metadata definitions, business rules, and data lineage.</div>
+                  <div class="diff-line addition">• Optimized monthly cloud billing by 25% by identifying and terminating idle GCP Compute Engine instances and refining AWS Lambda configurations.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Node 2: A Dachrs -->
+          <div class="timeline-node reveal-on-scroll" data-node="dachrs">
+            <div class="commit-dot"></div>
+            <div class="commit-card">
+              <div class="commit-meta">
+                <span class="commit-date">Dec 2021 – Jan 2023</span>
+              </div>
+              <div class="commit-title">Freelance WordPress Web Designer & Developer</div>
+              <div class="commit-org">A Dachrs PVT Ltd Company, Remote</div>
+            </div>
+            
+            <div class="git-diff-container" id="diff-dachrs">
+              <div class="git-diff-panel">
+                <div class="git-diff-header">Accomplishments & Impact</div>
+                <div class="git-diff-body">
+                  <div class="diff-line addition">• Designed, developed, and maintained over 10 custom WordPress websites for various clients.</div>
+                  <div class="diff-line addition">• Optimized website load times from 5 seconds to under 2 seconds through image compression, code minification, and clean plugin configuration management.</div>
+                  <div class="diff-line addition">• Provided ongoing technical support, successfully troubleshooting user navigation difficulties and documenting simple content update procedures.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Timeline Section -->
+    <section id="education" class="education">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">Academic Records</span>
+          <h2 class="section-title">Education Timeline</h2>
+          <p class="section-desc">My academic history, focusing on Computer Science, AI, and Mathematics. Click a node to expand course details.</p>
+        </div>
+        
+        <div class="git-tree-timeline" id="education-timeline">
+          
+          <!-- Node 1: SV College of Engineering -->
+          <div class="timeline-node reveal-on-scroll" data-node="svcet">
+            <div class="commit-dot"></div>
+            <div class="commit-card">
+              <div class="commit-meta">
+                <span class="commit-date">2019 – 2023</span>
+              </div>
+              <div class="commit-title">Bachelor of Technology in Computer Science & Engineering</div>
+              <div class="commit-org">Sri Venkateswara College of Engineering and Technology, Chittoor, India</div>
+            </div>
+            
+            <div class="git-diff-container" id="diff-svcet">
+              <div class="git-diff-panel">
+                <div class="git-diff-header">Key Coursework & Focus</div>
+                <div class="git-diff-body">
+                  <div class="diff-line addition">• Core training: Systems engineering, data structures, Relational Databases (SQL)</div>
+                  <div class="diff-line addition">• Practiced command line scripts, shell tools, and database queries</div>
+                  <div class="diff-line addition">• Graduated B.Tech in Computer Science and Engineering</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Node 2: LaSalle -->
+          <div class="timeline-node reveal-on-scroll" data-node="lasalle">
+            <div class="commit-dot"></div>
+            <div class="commit-card">
+              <div class="commit-meta">
+                <span class="commit-date">Sep 2023 – Aug 2025</span>
+              </div>
+              <div class="commit-title">AEC in Artificial Intelligence and Machine Learning</div>
+              <div class="commit-org">Collège LaSalle, Montreal, QC</div>
+            </div>
+            
+            <div class="git-diff-container" id="diff-lasalle">
+              <div class="git-diff-panel">
+                <div class="git-diff-header">Key Coursework & Focus</div>
+                <div class="git-diff-body">
+                  <div class="diff-line addition">• Specialized coursework: Machine learning architectures, dataset parsing, RAG design</div>
+                  <div class="diff-line addition">• Programmed analytics systems and optimized vector quantization configurations</div>
+                  <div class="diff-line addition">• Evaluated relevance models and RAG pipeline retrieval accuracies</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GitHub Contributions Section -->
+    <section id="contributions" class="contributions">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">Open Source</span>
+          <h2 class="section-title">GitHub Contributions</h2>
+          <p class="section-desc">Active participant in the developer ecosystem, contributing to complex open-source infrastructure projects.</p>
+        </div>
+        
+        <div class="contribution-display">
+          <div class="contribution-graphic-panel reveal-on-scroll">
+            <div class="pr-mock-header">
+              <div class="pr-status-badge merged">
+                <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M6 3.75a.75.75 0 0 1 .75-.75h5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-.75.75h-5a.75.75 0 0 1-.75-.75v-3.5zm.75 6a.75.75 0 0 0-.75.75v3.5c0 .414.336.75.75.75h5a.75.75 0 0 0 .75-.75v-3.5a.75.75 0 0 0-.75-.75h-5z"/><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1 1 13 0 6.5 6.5 0 0 1-13 0zM8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0z"/></svg>
+                Merged
+              </div>
+              <span class="pr-title">meltano/meltano: Patch database extractor config & fix test dependencies</span>
+            </div>
+            
+            <div class="pr-mock-body">
+              <p class="pr-desc">Evaluated repository bugs and structural bottlenecks within a complex codebase, implementing precise patches through Git to stabilize database extraction configurations. Engaged with international maintainers via pull requests, aligning submissions with continuous integration pipelines and validation metrics.</p>
+              
+              <div class="pr-action-row">
+                <a href="https://github.com/meltano/meltano" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                  <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                  View Meltano Repository
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">Portfolio Code</span>
+          <h2 class="section-title">Engineering Projects</h2>
+          <p class="section-desc">A showcase of data pipelines, secure databases, and cloud engineering projects.</p>
+        </div>
+        
+        <div class="projects-grid">
+          <!-- Project 1: Spotify End-to-End Data Pipeline -->
+          <div class="project-card reveal-on-scroll">
+            <div class="project-img-wrapper">
+              <img src="assets/serverless_flow.png" alt="Spotify End-to-End Data Pipeline Flow" class="project-img">
+              <div class="project-img-overlay"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-title">Spotify End-to-End Data Pipeline</div>
+              <div class="project-desc">Architected an event-driven serverless ingestion pipeline utilizing Python-based Lambda functions to query historical and current artist metrics. Managed raw data landing zones on S3, constructed AWS Glue crawlers to catalog upstream metadata schemas, and ran analytical queries via Athena to profile listening trend datasets.</div>
+              <div class="project-tags">
+                <span class="project-tag">AWS Lambda</span>
+                <span class="project-tag">AWS S3 / Glue</span>
+                <span class="project-tag">AWS Athena</span>
+                <span class="project-tag">Python</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/yashrith/Spotify-data-pipeline" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                  GitHub Repository
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 2: Medallion Architecture Data Warehouse -->
+          <div class="project-card reveal-on-scroll">
+            <div class="project-img-wrapper">
+              <img src="assets/meltano_flow.png" alt="Medallion Architecture Data Warehouse" class="project-img">
+              <div class="project-img-overlay"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-title">Medallion Architecture Data Warehouse</div>
+              <div class="project-desc">Constructed a multi-layer dbt environment to clean, validate, and transform raw transactional entries into structured reporting assets. Designed a relational dimensional model utilizing star-schema modeling to resolve data integration conflicts and deliver analytical-ready tables for downstream reporting.</div>
+              <div class="project-tags">
+                <span class="project-tag">dbt (Data Build Tool)</span>
+                <span class="project-tag">SQL Server</span>
+                <span class="project-tag">Star Schema</span>
+                <span class="project-tag">ETL Modeling</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/yashrith/dataWareHouse" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                  GitHub Repository
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 3: Python ATM Transaction System -->
+          <div class="project-card reveal-on-scroll">
+            <div class="project-img-wrapper">
+              <img src="assets/ledger_flow.png" alt="Python ATM Transaction System" class="project-img">
+              <div class="project-img-overlay"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-title">Python ATM Transaction System</div>
+              <div class="project-desc">Engineered an interactive OOP-based cash transactions and statement log database. Implemented functional validations, file-based history recording, parameter mapping rules, and error tracking handlers.</div>
+              <div class="project-tags">
+                <span class="project-tag">Python OOP</span>
+                <span class="project-tag">File System DB</span>
+                <span class="project-tag">Security Logic</span>
+                <span class="project-tag">Flow Control</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/yashrith/python-atm-transcation" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                  GitHub Repository
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: YOLO Real-Time Object Detection -->
+          <div class="project-card reveal-on-scroll">
+            <div class="project-img-wrapper">
+              <img src="assets/avatar.png" alt="YOLO Object Detection" class="project-img">
+              <div class="project-img-overlay"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-title">YOLO Real-Time Object Detection</div>
+              <div class="project-desc">Programmed an interactive object recognition pipeline applying the YOLO vision algorithm. Configured deep model weight parsers, integrated webcam data stream buffers, and plotted bounding boxes in real-time.</div>
+              <div class="project-tags">
+                <span class="project-tag">YOLO Algorithm</span>
+                <span class="project-tag">Computer Vision</span>
+                <span class="project-tag">OpenCV</span>
+                <span class="project-tag">Python</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/yashrith/yolo-object-detection" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                  GitHub Repository
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Papers Section -->
+    <section id="research" class="research">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">Academic & Publications</span>
+          <h2 class="section-title">Research Papers & Concepts</h2>
+          <p class="section-desc">Academic reports, DOI publications, and theoretical prototypes exploring local LLMs and structured parsing reliability.</p>
+        </div>
+        
+        <div class="research-grid">
+          <div class="research-card reveal-on-scroll">
+            <div class="research-header-flex">
+              <span class="research-tag">LLM Performance Report</span>
+              <a href="https://zenodo.org/records/20764230" target="_blank" rel="noopener noreferrer" class="research-status" style="color: var(--neon-cyan); text-decoration: underline;">
+                Zenodo DOI
+              </a>
+            </div>
+            <h3 class="research-card-title">Quantization Precision Degradation and Latency Predictability in Deterministic Local LLM Ingestion Pipelines</h3>
+            <p class="research-desc">Evaluates weight quantization impacts (INT8, INT4) on precision degradation and latency profiles within high-throughput local LLM pipelines. Benchmarks token throughput variations and memory footprint constraints across local execution environments.</p>
+            <div class="research-meta">
+              <span>Author: Yashrith Chittoor Hari Krishna</span>
+              <span>
+                <a href="https://github.com/yashrith/local-llm-structured-output-reliability" target="_blank" rel="noopener noreferrer" style="color: var(--neon-cyan); text-decoration: none;">GitHub Code</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learning & Certifications Section -->
+    <section id="certifications" class="certifications">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">Verified Credentials</span>
+          <h2 class="section-title">Learning & Certifications</h2>
+          <p class="section-desc">Acquired certifications verifying systems operations, python programming, and cybersecurity fundamentals.</p>
+        </div>
+        
+        <div class="certifications-grid">
+          <!-- Cert 5 -->
+          <div class="cert-card cert-snowflake reveal-on-scroll">
+            <div class="cert-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="2" x2="12" y2="22"></line>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
+                <line x1="19.07" y1="4.93" x2="4.93" y2="19.07"></line>
+                <polyline points="10 5 12 3 14 5"></polyline>
+                <polyline points="10 19 12 21 14 19"></polyline>
+                <polyline points="19 10 21 12 19 14"></polyline>
+                <polyline points="5 10 3 12 5 14"></polyline>
+                <polyline points="7 7 6 5 8 6"></polyline>
+                <polyline points="17 17 18 19 16 18"></polyline>
+                <polyline points="17 7 18 5 16 6"></polyline>
+                <polyline points="7 17 6 19 8 18"></polyline>
+              </svg>
+            </div>
+            <div class="cert-content">
+              <h3 class="cert-title">Intro to Snowflake for Devs, Data Scientists, Data Engineers</h3>
+              <p class="cert-org">Snowflake Verified Course Certificate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">Get in Touch</span>
+          <h2 class="section-title">Connect With Me</h2>
+          <p class="section-desc">Feel free to reach out for opportunities, collaboration, or just to say hello.</p>
+        </div>
+        
+        <div class="contact-layout">
+          <div class="contact-info reveal-on-scroll">
+            <p style="color: var(--text-muted); margin-bottom: 24px;">Please connect or reach out directly on LinkedIn, GitHub, or Email. I am based in Montreal, QC and look forward to hearing from you.</p>
+            
+            <div class="contact-details">
+              <!-- Email -->
+              <div class="contact-detail-card">
+                <div class="contact-detail-icon">
+                  <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114V5.383zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.731z"/></svg>
+                </div>
+                <div class="contact-detail-info">
+                  <span class="contact-detail-label">Email</span>
+                  <a href="mailto:yashrithchittoor@gmail.com" class="contact-detail-value">yashrithchittoor@gmail.com</a>
+                </div>
+              </div>
+              
+              <!-- LinkedIn -->
+              <div class="contact-detail-card">
+                <div class="contact-detail-icon">
+                  <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
+                </div>
+                <div class="contact-detail-info">
+                  <span class="contact-detail-label">LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/yashrith/" target="_blank" rel="noopener noreferrer" class="contact-detail-value">linkedin.com/in/yashrith</a>
+                </div>
+              </div>
+
+              <!-- GitHub -->
+              <div class="contact-detail-card">
+                <div class="contact-detail-icon">
+                  <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M8 1.3c-3.7 0-6.7 3-6.7 6.7 0 3 1.9 5.5 4.6 6.4.3.1.5-.1.5-.3v-1.1c-1.9.4-2.3-.9-2.3-.9-.3-.8-.7-1-.7-1-.6-.4.1-.4.1-.4.7.1 1.1.7 1.1.7.6 1 1.6.7 2 .5.1-.4.2-.7.4-.9-1.5-.2-3.1-.8-3.1-3.4 0-.7.3-1.3.7-1.8-.1-.2-.3-.9.1-1.8 0 0 .5-.2 1.7.6.5-.2 1.7-.2 1.7-.2 1.5.2 1.2.8 1.7.6 1.7-.6.4.9.1 1.6.1 1.8.4.5.7 1.1.7 1.8 0 2.6-1.6 3.2-3.1 3.4.2.2.5.7.5 1.4v2.1c0 .2.2.4.5.3A6.7 6.7 0 0 0 14.7 8c0-3.7-3-6.7-6.7-6.7z"/></svg>
+                </div>
+                <div class="contact-detail-info">
+                  <span class="contact-detail-label">GitHub</span>
+                  <a href="https://github.com/yashrith" target="_blank" rel="noopener noreferrer" class="contact-detail-value">github.com/yashrith</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="social-links">
+              <a href="https://github.com/yashrith" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/yashrith/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p class="footer-text">
+        Designed & Coded by <span>Yashrith Chittoor Hari Krishna</span> &copy; 2026. Hosted on GitHub Pages.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

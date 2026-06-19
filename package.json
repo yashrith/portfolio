@@ -1,0 +1,11 @@
+{
+  "name": "yashrith-portfolio",
+  "version": "1.0.0",
+  "description": "Coder portfolio website for Yashrith Chittoor Hari Krishna",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx -y http-server -p 3000"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
