@@ -540,9 +540,9 @@ section {
   z-index: 5;
 }
 
-.timeline-node:nth-child(2) .commit-dot { border-color: var(--neon-cyan); box-shadow: 0 0 8px var(--neon-cyan); }
-.timeline-node:nth-child(3) .commit-dot { border-color: var(--neon-purple); box-shadow: 0 0 8px var(--neon-purple); }
-.timeline-node:nth-child(4) .commit-dot { border-color: var(--neon-coral); box-shadow: 0 0 8px var(--neon-coral); }
+.timeline-node:nth-child(2) .commit-dot { border-color: var(--neon-purple); box-shadow: 0 0 8px var(--neon-purple); }
+.timeline-node:nth-child(3) .commit-dot { border-color: var(--neon-coral); box-shadow: 0 0 8px var(--neon-coral); }
+.timeline-node:nth-child(4) .commit-dot { border-color: var(--neon-amber); box-shadow: 0 0 8px var(--neon-amber); }
 
 .timeline-node.active .commit-dot {
   transform: scale(1.3);
